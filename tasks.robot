@@ -38,13 +38,13 @@ Order robots from RobotSpareBin Industries Inc
 
 *** Keywords ***
 Input Form Dialog OR access vault
-    # Add heading    Input Required
-    # Add text input    url    label=URL
-    # ${result}=    Run dialog
-    # [Return]    ${result.url}
-    ${secret}=    Get Secret    credentials
-    Log    ${secret}
-    [Return]    ${secret}
+    Add heading    Input Required
+    Add text input    url    label=URL
+    ${result}=    Run dialog
+    [Return]    ${result.url}
+    # ${secret}=    Get Secret    credentials
+    # Log    ${secret}
+    # [Return]    ${secret}
 
 Open the robot order website
     [Arguments]    ${url}
